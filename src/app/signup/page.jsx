@@ -9,7 +9,8 @@ const robotoMono = Roboto_Mono({
 
 const page = () => {
     return (
-        <div className="flex flex-col justify-center items-center min-h-screen bg-no-repeat bg-cover font-extrabold" style={{backgroundImage:'url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTcxMzA4Ni13aWtpbWVkaWEtaW1hZ2Utam9iNTcyLTEuanBn.jpg)', fontFamily:"robotoMono"}}>
+        <div className=" min-h-screen bg-no-repeat bg-cover bg-opacity-30 bg-black font-extrabold" style={{backgroundImage:'url(https://img.pikbest.com/back_our/20210302/bg/e8ca70808e5fe.jpg!bw700)', fontFamily:"robotoMono"}}>
+        <div className='bg-black bg-opacity-50 flex flex-col justify-center items-center min-h-screen'>
         <h2 className="text-5xl mb-6 text-center text-primary">Sign Up</h2>
         <form>
           <div className="mb-4">
@@ -70,6 +71,7 @@ const page = () => {
             </Link>
           </div>
         </form>
+      </div>
     </div>
     );
 };
