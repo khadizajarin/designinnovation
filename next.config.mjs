@@ -5,9 +5,14 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'gratisography.com',
-              },
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.pexels.com',
+            },
         ]
     }
 };
+
 
 export default nextConfig;
