@@ -25,7 +25,7 @@ const Login = () => {
               Email/Username
             </label>
             <input
-              className="bg-primary text-accent rounded w-[24rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
+              className="bg-primary text-accent rounded md:w-[24rem] w-[20rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
               id="email"
               type="text"
               placeholder="Email or Username"
@@ -36,7 +36,7 @@ const Login = () => {
               Password
             </label>
             <input
-              className="bg-primary text-accent rounded w-[24rem] py-2 px-3 mb-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
+              className="bg-primary text-accent rounded md:w-[24rem] w-[20rem] py-2 px-3 mb-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
               id="password"
               type="password"
               placeholder="******************"
@@ -62,6 +62,12 @@ const Login = () => {
               Don&apos;t have an account? Sign Up
             </Link>
           </div>
+          <div className="mt-4 text-center">
+            <Link href="/dashboard" className="bg-primary hover:bg-secondary text-accent hover:text-neutral  py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Dashboard
+            </Link>
+          </div>
+          
         </form>
     </div>
   );

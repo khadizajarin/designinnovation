@@ -1,6 +1,8 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import { Open_Sans,Roboto_Mono, } from 'next/font/google'
+import { useState } from 'react';
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
@@ -8,40 +10,57 @@ const robotoMono = Roboto_Mono({
   variable: '--font-roboto-mono',
 })
 
+
+
 const page = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
+  
+    
     return (
-        <div className="min-h-screen bg-primary bg-opacity-50 flex" style={{fontFamily:"robotoMono"}}>
-            <aside className="w-64 p-6 shadow-lg hidden md:block bg-accent bg-opacity-60">
-                {/* dashboard options */}
-                <h2 className="text-xl mb-4 text-neutral font-extrabold text-opacity-90">Dashboard</h2>
-                <nav>
-                    <ul>
-                        <li className="mb-2">
-                            <Link href="#profile" className="text-primary hover:text-neutral flex items-center">
-                                <svg className="w-5 h-5 mr-2 border-neutral border-2 rounded-full" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14z" />
-                                </svg>
-                                Profile
-                            </Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link href="#settings" className="text-primary hover:text-neutral flex items-center">
-                                <svg className="w-5 h-5 mr-2 border-neutral border-2 rounded-full" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14z" />
-                                </svg>
-                                Settings
-                            </Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link href="#logout" className="text-primary hover:text-neutral flex items-center">
-                                <svg className="w-5 h-5 mr-2 border-neutral border-2 rounded-full" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14z" />
-                                </svg>
-                                Logout
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+        <div className="min-h-screen bg-primary bg-opacity-50 flex flex-col lg:flex-row" style={{fontFamily:"robotoMono"}}>
+            <aside className="md:w-64 p-6 shadow-lg bg-accent bg-opacity-80">
+            <h2 className="text-xl font-extrabold hidden md:block text-neutral ">Dashboard</h2>
+            <div className="md:hidden flex items-center justify-between">
+                <h2 className="text-xl font-extrabold text-neutral text-opacity-90">Dashboard</h2>
+                <button onClick={toggleMenu} className="text-neutral hover:text-text-neutral focus:outline-none">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
+                </svg>
+                </button>
+            </div>
+      
+            <nav className={`md:block ${isOpen ? 'block' : 'hidden'} md:mt-4 mt-2`}>
+                <ul className="flex md:flex-col flex-row  space-x-4 md:space-x-0">
+                <li className="mb-2">
+                    <Link href="#profile" className="text-primary hover:text-neutral flex items-center">
+                    <svg className="w-5 h-5 mr-2 border-neutral border-2 rounded-full" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14z" />
+                    </svg>
+                    Profile
+                    </Link>
+                </li>
+                <li className="mb-2">
+                    <Link href="#settings" className="text-primary hover:text-neutral flex items-center">
+                    <svg className="w-5 h-5 mr-2 border-neutral border-2 rounded-full" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14z" />
+                    </svg>
+                    Settings
+                    </Link>
+                </li>
+                <li className="mb-2">
+                    <Link href="#logout" className="text-primary hover:text-neutral flex items-center">
+                    <svg className="w-5 h-5 mr-2 border-neutral border-2 rounded-full" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14z" />
+                    </svg>
+                    Logout
+                    </Link>
+                </li>
+                </ul>
+            </nav>
             </aside>
 
 

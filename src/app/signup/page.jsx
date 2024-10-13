@@ -17,7 +17,7 @@ const page = () => {
               Username
             </label>
             <input
-              className="bg-primary text-accent rounded w-[24rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
+              className="bg-primary text-accent rounded md:w-[24rem] w-[20rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
               id="username"
               type="text"
               placeholder="Username"
@@ -28,7 +28,7 @@ const page = () => {
               Email
             </label>
             <input
-              className="bg-primary text-accent rounded w-[24rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
+              className="bg-primary text-accent rounded md:w-[24rem] w-[20rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
               id="email"
               type="email"
               placeholder="Email"
@@ -39,7 +39,7 @@ const page = () => {
               Password
             </label>
             <input
-              className="bg-primary text-accent rounded w-[24rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
+              className="bg-primary text-accent rounded md:w-[24rem] w-[20rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
               id="password"
               type="password"
               placeholder="Password"
@@ -50,7 +50,7 @@ const page = () => {
               Confirm Password
             </label>
             <input
-              className="bg-primary text-accent rounded w-[24rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
+              className="bg-primary text-accent rounded md:w-[24rem] w-[20rem] py-2 px-3 leading-relaxed tracking-wider focus:outline-none focus:shadow-outline placeholder-accent placeholder-opacity-60"
               id="confirmPassword"
               type="password"
               placeholder="Confirm Password"
