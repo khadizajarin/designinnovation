@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Developer - Web Application Login, Signup, and Dashboard
 
-## Getting Started
+## Overview
+This project involves creating responsive login and signup pages, along with a base dashboard for a web application. The implementation uses Next.js for the React framework and Tailwind CSS for styling, ensuring a modern and responsive design. Form validation is handled using Formik.
 
-First, run the development server:
+## Table of Contents
+- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Responsive Login Page](#responsive-login-page)
+- [Responsive Signup Page](#responsive-signup-page)
+- [Base Dashboard](#base-dashboard)
+- [Design Guidelines](#design-guidelines)
+- [Requirements](#requirements)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
+To get started with the project, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/khadizajarin/designinnovation
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. Navigate to the project directory:
+   ```sh
+   cd designinnovation
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
 
-## Learn More
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   The application will be available at `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Formik**: A library for building forms in React.
+- **Yup**: A JavaScript schema builder for value parsing and validation (used with Formik).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Features
+### Responsive Login Page
+- Fields for email/username and password.
+- Options for "Forgot Password?" and a link to the Signup page.
+- Prominent "Login" button styled with Tailwind CSS utilities.
+- Responsive layout for different screen sizes (desktop, tablet, and mobile).
 
-## Deploy on Vercel
+### Responsive Signup Page
+- Fields for username, email, password, and password confirmation.
+- "Sign Up" button with appropriate styling.
+- Form validation for user inputs.
+- Link to the Login page for users who already have an account.
+- Responsive design for various devices.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Base Dashboard
+- Sidebar for navigation (e.g., Dashboard, Profile, Settings) using Tailwind’s utility classes.
+- Header displaying the app name and user profile options.
+- Main content area that can be dynamically updated based on user interactions.
+- Responsive layout for various screen sizes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Design Guidelines
+- Aim for a modern, clean design that aligns with current web application standards.
+- Utilize Tailwind CSS for styling, focusing on utility-first design principles.
+- Follow best practices for React development, including component reusability and state management.
+
+## Requirements
+- Proven experience in React development with a strong portfolio.
+- Familiarity with Tailwind CSS and its utility classes.
+- Experience with responsive design techniques (e.g., CSS Grid, Flexbox).
+- Experience with form validation libraries (e.g., Formik, Yup) is a plus.
+- Ability to collaborate with UI/UX designers and integrate their designs effectively.
+
+## Deployment
+The application is deployed at: [Deployment Link](https://design-innovation-internship-task.netlify.app/)
+
+## Contributing
+We welcome contributions from the community. To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a Pull Request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to reach out for any clarifications or adjustments needed during development. Thank you for contributing to this project!
