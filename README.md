@@ -54,6 +54,7 @@ To get started with the project, follow these steps:
 - Options for "Forgot Password?" and a link to the Signup page.
 - Prominent "Login" button styled with Tailwind CSS utilities.
 - Responsive layout for different screen sizes (desktop, tablet, and mobile).
+- A "Go to Dashboard" button as there is no functionality to login and navigate to dashboard route.
 
 ### Responsive Signup Page
 - Fields for username, email, password, and password confirmation.
@@ -61,12 +62,14 @@ To get started with the project, follow these steps:
 - Form validation for user inputs.
 - Link to the Login page for users who already have an account.
 - Responsive design for various devices.
+- A "Go to Dashboard" button as there is no functionality to signup and navigate to dashboard route.
 
 ### Base Dashboard
 - Sidebar for navigation (e.g., Dashboard, Profile, Settings) using Tailwind’s utility classes.
 - Header displaying the app name and user profile options.
 - Main content area that can be dynamically updated based on user interactions.
 - Responsive layout for various screen sizes.
+- A "Logout" button as there is no functionality to logout and navigate to login route.
 
 ## Design Guidelines
 - Aim for a modern, clean design that aligns with current web application standards.
@@ -94,7 +97,3 @@ We welcome contributions from the community. To contribute, please follow these 
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to reach out for any clarifications or adjustments needed during development. Thank you for contributing to this project!
